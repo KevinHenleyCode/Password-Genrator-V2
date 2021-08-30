@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator V2</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <header>
+            <h1 class="text-gray-300">Password Generator V2</h1>
+        </header>
+        <div class="card">
+            <div class="card-header">
+                <h2 class="text-gray-300">Password:</h2>
+                <!-- Choices output -->
+                <h3 class="text1"></h3>
+                <h3 class="text2"></h3>
+                <h3 class="text3"></h3>
+                <h3 class="text4"></h3>
+                <h3 class="text5"></h3>
+                <h3 class="nochoices"></h3>
+                <h3 class="results"></h3>
+            </div>
+            <div class="">
+                <textarea readonly id="password" placeholder="Your Secure Password"
+                    aria-label="Generated Password"></textarea>
+            </div>
+            <div class="">
+                <button id="generate" class="btn">Generate</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
