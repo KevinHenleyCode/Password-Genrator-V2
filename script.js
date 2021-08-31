@@ -3,9 +3,22 @@ var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 function generatePassword() {
+
+
+//TODO quick check of the radio buttons. build on later
+// document.getElementById("submit").addEventListener("click", function(event){
+  // event.preventDefault()
   
-  
-  
+//     if (document.querySelector('.yes1').checked) {
+//       console.log('yep');
+      
+//     } else if(document.querySelector('.no1').checked) {
+//       console.log('nope');
+      
+//     }
+// })
+
+
   //________________________________________________
   // checks the length the user wants for password and checks if it meets the requirements
   // prompts the user with a choice and then checks it for true or false
