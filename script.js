@@ -22,10 +22,34 @@ document.getElementById("submit").addEventListener("click", function(event){
 
   // checks the which choice was made
   if (document.querySelector('.yes1').checked) {
-    console.log('yep')
+    console.log('You Chose Uppercase')
     
   } else if(document.querySelector('.no1').checked) {
-    console.log('nope')
+    console.log('No Uppercase')
+    
+  }
+
+    if (document.querySelector('.yes2').checked) {
+    console.log('You wanted Lowercase')
+    
+  } else if(document.querySelector('.no2').checked) {
+    console.log('No Lowercase')
+    
+  }
+
+    if (document.querySelector('.yes3').checked) {
+    console.log('You selected Numbers')
+    
+  } else if(document.querySelector('.no3').checked) {
+    console.log('No Numbers')
+    
+  }
+
+    if (document.querySelector('.yes4').checked) {
+    console.log('You checked Special Characters')
+    
+  } else if(document.querySelector('.no4').checked) {
+    console.log('No Special Characters')
     
   }
 
