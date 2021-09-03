@@ -18,39 +18,50 @@ document.getElementById("submit").addEventListener("click", function(event){
     console.log('Too low');
   } else if(parseInt(psLength) > 128) {
     console.log('Too high');
+  } else {
+    console.log(psLength);
+    document.querySelector('.text0').innerHTML = `You chose to make your password ${psLength} characters long.`
   }
 
   // checks the which choice was made
   if (document.querySelector('.yes1').checked) {
     console.log('You Chose Uppercase')
-    
+    document.querySelector('.text1').innerHTML = `You Chose Uppercase.`
+
   } else if(document.querySelector('.no1').checked) {
     console.log('No Uppercase')
-    
+    document.querySelector('.text1').innerHTML = `No Uppercase.`
+
   }
 
     if (document.querySelector('.yes2').checked) {
     console.log('You wanted Lowercase')
-    
+    document.querySelector('.text2').innerHTML = `You wanted Lowercase.`
+
   } else if(document.querySelector('.no2').checked) {
     console.log('No Lowercase')
-    
+    document.querySelector('.text2').innerHTML = `No Lowercase.`
+
   }
 
     if (document.querySelector('.yes3').checked) {
     console.log('You selected Numbers')
-    
+    document.querySelector('.text3').innerHTML = `You selected Numbers.`
+
   } else if(document.querySelector('.no3').checked) {
     console.log('No Numbers')
-    
+    document.querySelector('.text3').innerHTML = `No Numbers.`
+
   }
 
     if (document.querySelector('.yes4').checked) {
     console.log('You checked Special Characters')
-    
+    document.querySelector('.text4').innerHTML = `You checked Special Characters.`
+
   } else if(document.querySelector('.no4').checked) {
     console.log('No Special Characters')
-    
+    document.querySelector('.text4').innerHTML = `No Special Characters.`
+
   }
 
 })
