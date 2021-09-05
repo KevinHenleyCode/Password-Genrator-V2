@@ -69,28 +69,32 @@ document.getElementById("submit").addEventListener("click", function(event){
   let spChar = [`', ", ., -, _, !, @, #, $, %, ^, &, *, (, ), +`]
   let password = []
 
-  for (let loop = 0; loop < psLength; loop++) {
-    loop--
-
+  for (let loop = 0; loop < psLength; loop) {
 
     if (document.querySelector('.yes1').checked) {
-     loop++
-     console.log(`Upper ${loop}`); 
+      loop++
+      console.log(`Upper ${loop}`)
     }
+    if (loop == psLength) {break}
+    
     if (document.querySelector('.yes2').checked) {
       loop++ 
-      console.log(`Lower${loop}`); 
+      console.log(`Lower${loop}`) 
     }
+    if (loop == psLength) {break}
+    
     if (document.querySelector('.yes3').checked) {
       loop++ 
-      console.log(`Number ${loop}`); 
+      console.log(`Number ${loop}`) 
     }
+    if (loop == psLength) {break}
+    
     if (document.querySelector('.yes4').checked) {
       loop++ 
-      console.log(`Special Character${loop}`); 
+      console.log(`Special Character${loop}`)
     }
-    
-    
+    if (loop == psLength) {break}
+
   }
 
 })
