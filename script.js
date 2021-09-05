@@ -15,11 +15,11 @@ document.getElementById("submit").addEventListener("click", function(event){
   
   // checks validity of the number choice
   if (parseInt(psLength) < 8) {
-    console.log('Too low');
+    console.log('Too low')
   } else if(parseInt(psLength) > 128) {
-    console.log('Too high');
+    console.log('Too high')
   } else {
-    console.log(psLength);
+    console.log(psLength)
     document.querySelector('.text0').innerHTML = `You chose to make your password ${psLength} characters long.`
   }
 
@@ -64,8 +64,34 @@ document.getElementById("submit").addEventListener("click", function(event){
 
   }
 
-  let Lowlet= ['a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z']
-  let Uplet = ['A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z']
+  let lowlet= ['a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z']
+  let uplet = ['A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z']
+  let spChar = [`', ", ., -, _, !, @, #, $, %, ^, &, *, (, ), +`]
+  let password = []
+
+  for (let loop = 0; loop < psLength; loop++) {
+    loop--
+
+
+    if (document.querySelector('.yes1').checked) {
+     loop++
+     console.log(`Upper ${loop}`); 
+    }
+    if (document.querySelector('.yes2').checked) {
+      loop++ 
+      console.log(`Lower${loop}`); 
+    }
+    if (document.querySelector('.yes3').checked) {
+      loop++ 
+      console.log(`Number ${loop}`); 
+    }
+    if (document.querySelector('.yes4').checked) {
+      loop++ 
+      console.log(`Special Character${loop}`); 
+    }
+    
+    
+  }
 
 })
 
