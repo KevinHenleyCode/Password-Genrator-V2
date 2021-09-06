@@ -29,7 +29,6 @@ document.getElementById("submit").addEventListener("click", function(event){
     document.querySelector('.printLen').innerHTML = `You chose to make your password ${psLength} characters long.`
   }
 
-console.log(parseInt(pslength));
 
   // checks the which choice was made
   document.querySelector('.printChoi').innerHTML = `Your choice in characters were:`
