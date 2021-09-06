@@ -1,66 +1,50 @@
-// // Assignment Code
-// var generateBtn = document.querySelector("#generate");
-
-// // Write password to the #password input
-// function generatePassword() {
-
-
-
-
-//TODO quick check of the radio buttons. build on later
 document.getElementById("submit").addEventListener("click", function(event){
   event.preventDefault()
   
+  let upYes = document.querySelector('.yes1').checked
+  let lowYes = document.querySelector('.yes2').checked
+  let numYes = document.querySelector('.yes3').checked
+  let spYes = document.querySelector('.yes4').checked
   let psLength = document.getElementById('pslength').value
   
+
+
   // checks validity of the number choice
-  if (parseInt(psLength) < 8) {
-    console.log('Too low')
+  if (parseInt(psLength) < 1) {
+    alert('Length must be no less than 1 character.')
+    return location.reload()
+
   } else if(parseInt(psLength) > 128) {
-    console.log('Too high')
+    alert('Length must be no more than 128 characters.')
+    return location.reload()
+
   } else {
-    console.log(psLength)
     document.querySelector('.text0').innerHTML = `You chose to make your password ${psLength} characters long.`
   }
 
+
+
   // checks the which choice was made
-  if (document.querySelector('.yes1').checked) {
-    console.log('You Chose Uppercase')
-    document.querySelector('.text1').innerHTML = `You Chose Uppercase.`
-
-  } else if(document.querySelector('.no1').checked) {
-    console.log('No Uppercase')
-    document.querySelector('.text1').innerHTML = `No Uppercase.`
-
+  if (upYes) {
+    document.querySelector('.text1').innerHTML = `Uppercase.`
   }
 
-    if (document.querySelector('.yes2').checked) {
-    console.log('You wanted Lowercase')
-    document.querySelector('.text2').innerHTML = `You wanted Lowercase.`
-
-  } else if(document.querySelector('.no2').checked) {
-    console.log('No Lowercase')
-    document.querySelector('.text2').innerHTML = `No Lowercase.`
-
+    if (lowYes) {
+    document.querySelector('.text2').innerHTML = `Lowercase.`
   }
 
-    if (document.querySelector('.yes3').checked) {
-    console.log('You selected Numbers')
-    document.querySelector('.text3').innerHTML = `You selected Numbers.`
-
-  } else if(document.querySelector('.no3').checked) {
-    console.log('No Numbers')
-    document.querySelector('.text3').innerHTML = `No Numbers.`
-
+    if (numYes) {
+    document.querySelector('.text3').innerHTML = `Numbers.`
   }
 
-    if (document.querySelector('.yes4').checked) {
-    console.log('You checked Special Characters')
-    document.querySelector('.text4').innerHTML = `You checked Special Characters.`
+    if (spYes) {
+    document.querySelector('.text4').innerHTML = `Special Characters.`
+  }
 
-  } else if(document.querySelector('.no4').checked) {
-    console.log('No Special Characters')
-    document.querySelector('.text4').innerHTML = `No Special Characters.`
+  if (!upYes && !lowYes && !numYes && !spYes === true) {
+    alert('You must pick at least one option.')
+    
+    return location.reload()
 
   }
 
