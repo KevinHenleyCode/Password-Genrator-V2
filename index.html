@@ -11,15 +11,23 @@
 </head>
 <body class="bg-gray-700 font-mono">
 
+
     <header class="flex flex-col items-center p-5 mb-20 bg-red-900">
         <h1 class="text-gray-200 text-4xl font-semibold">Password Generator V2</h1>
     </header>
-    <div class="flex flex-col items-center">
-        <div class="">
-            <form action="" class="flex flex-col items-center">
-                <label class="text-white">Length: (from 8-128)</label>
-                <input type="number" name="pslength" class="mb-10" id="pslength" min="8" max="128" required>
 
+
+    <div class="flex flex-col items-center w-4/5 m-auto">
+        <div>
+
+            <!-- form -->
+            <form action="" class="flex flex-col items-center">
+                
+                <!-- number input -->
+                <label class="text-white">Length: (from 1-128)</label>
+                <input type="number" name="pslength" class="mb-10" id="pslength" min="1" max="128" required>
+
+                <!-- radio buttons -->
                 <div class="grid grid-rows-5 md:grid-rows-2 grid-flow-col md:gap-x-12 md:gap-y-10 gap-y-4 mb-10 ">
                     <div class="flex flex-col items-center w-52 shadow-lg border-2 border-black border-solid rounded-lg bg-red-400 p-1">
                         <h3 class="font-bold text-">Uppercase</h3>
@@ -51,26 +59,36 @@
                     </div>
                 </div>
 
+                <!-- submit button -->
                 <input type="submit" name="submit" id="submit" class="text-gray-800 border-2 border-black border-solid rounded-md bg-green-400 p-1">
             </form>
         </div>
         <div>
-            <div class="text-white">
-                <!-- Choices output -->
-                <ul class="">
-                    <li class="text0"></li>
-                    <li class="text1"></li>
-                    <li class="text2"></li>
-                    <li class="text3"></li>
-                    <li class="text4"></li>
-                </ul>
-                <h3 class="nochoices"></h3>
-                <h3 class="results mt-10"></h3>
-            </div>
 
-                <textarea id='printPass' class="border-2 border-black border-solid rounded-sm bg-gray-500 placeholder-gray-400 text-green-500" readonly id="password" placeholder="Your Secure Password" rows="4" cols="40"
-                    aria-label="Generated Password"></textarea>
+
+            <!-- user choices -->
+            <div class="text-white">
+                <ul>
+                    <li class="printLen"></li>
+                    <li class="printChoi"></li>
+                    <li class="printUp"></li>
+                    <li class="printLow"></li>
+                    <li class="printNum"></li>
+                    <li class="printSp"></li>
+                </ul>
+            </div>
+            
+            
+            <!-- textarea -->
+            <textarea 
+            id='printPass' 
+            class="border-2 border-black border-solid rounded-sm bg-gray-500 placeholder-gray-400 text-green-500" 
+            readonly id="password" placeholder="Your Password" rows="4" cols="40"
+            aria-label="Generated Password">
+            </textarea>
         </div>
+
+
     </div>
 
 </body>
