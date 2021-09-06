@@ -21,29 +21,33 @@ document.getElementById("submit").addEventListener("click", function(event){
     alert('Length must be no more than 128 characters.')
     return location.reload()
 
+  } else if(psLength.length == 0) {
+    alert('You must pick a number.')
+    return location.reload()
+
   } else {
     document.querySelector('.printLen').innerHTML = `You chose to make your password ${psLength} characters long.`
   }
 
-
+console.log(parseInt(pslength));
 
   // checks the which choice was made
   document.querySelector('.printChoi').innerHTML = `Your choice in characters were:`
 
   if (upYes) {
-    document.querySelector('.printUp').innerHTML = `Uppercase.`
+    document.querySelector('.printUp').innerHTML = `Uppercase`
   }
 
   if (lowYes) {
-    document.querySelector('.printLow').innerHTML = `Lowercase.`
+    document.querySelector('.printLow').innerHTML = `Lowercase`
   }
 
   if (numYes) {
-    document.querySelector('.printNum').innerHTML = `Numbers.`
+    document.querySelector('.printNum').innerHTML = `Numbers`
   }
 
   if (spYes) {
-    document.querySelector('.printSp').innerHTML = `Special Characters.`
+    document.querySelector('.printSp').innerHTML = `Special Characters`
   }
 
   if (!upYes && !lowYes && !numYes && !spYes === true) {

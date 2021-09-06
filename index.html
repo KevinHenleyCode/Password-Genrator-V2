@@ -60,7 +60,7 @@
                 </div>
 
                 <!-- submit button -->
-                <input type="submit" name="submit" id="submit" class="text-gray-800 border-2 border-black border-solid rounded-md bg-green-400 p-1">
+                <input type="submit" name="submit" id="submit" class="text-gray-800 border-2 border-black border-solid rounded-md bg-green-400 p-1 mb-5">
             </form>
         </div>
         <div>
@@ -69,23 +69,25 @@
             <!-- user choices -->
             <div class="text-white">
                 <ul>
-                    <li class="printLen"></li>
-                    <li class="printChoi"></li>
-                    <li class="printUp"></li>
-                    <li class="printLow"></li>
-                    <li class="printNum"></li>
-                    <li class="printSp"></li>
+                    <li class="printLen mb-5 text-red-400"></li>
+                    <li class="printChoi mb-5 text-2xl"></li>
+                    <li class="printUp mb-5 text-green-500 text-xl ml-5"></li>
+                    <li class="printLow mb-5 text-green-500 text-xl ml-5"></li>
+                    <li class="printNum mb-5 text-green-500 text-xl ml-5"></li>
+                    <li class="printSp mb-5 text-green-500 text-xl ml-5"></li>
                 </ul>
             </div>
             
-            
-            <!-- textarea -->
-            <textarea 
-            id='printPass' 
-            class="border-2 border-black border-solid rounded-sm bg-gray-500 placeholder-gray-400 text-green-500" 
-            readonly id="password" placeholder="Your Password" rows="4" cols="40"
-            aria-label="Generated Password">
+            <div class="flex flex-col items-center">
+
+                <!-- textarea -->
+                <textarea 
+                id='printPass' 
+                class="border-2 border-black border-solid rounded-sm bg-gray-500 placeholder-gray-400 text-green-500 p-2" 
+                readonly id="password" placeholder="Your Password" rows="4" cols="40"
+                aria-label="Generated Password">
             </textarea>
+        </div>
         </div>
 
 
