@@ -17,6 +17,8 @@
 - [Contributing](#Contributing) <br>
 - [Tests](#Tests) <br>
 - [Questions](#Questions) <br>
+- [Screenshot](#Screenshot) <br>
+- [Link](#Link) <br>
 <br>
 <br>
 
@@ -55,11 +57,9 @@
 <br>
 
 ## **Screenshot**
-
-
-
+![screenshot](img/screenshot.png)
 <br>
 <br>
 
-## **Links**
+## **Link**
 [Site](https://kevinhenleycode.github.io/Password-Genrator-V2/)
