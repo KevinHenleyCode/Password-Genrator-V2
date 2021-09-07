@@ -26,27 +26,38 @@ document.getElementById("submit").addEventListener("click", function(event){
     return location.reload()
 
   } else {
-    document.querySelector('.printLen').innerHTML = `You chose to make your password ${psLength} characters long.`
+    document.querySelector('#printLen').innerHTML = `You chose to make your password ${psLength} characters long.`
   }
 
 
   // checks the which choice was made
-  document.querySelector('.printChoi').innerHTML = `Your choice in characters were:`
+  document.querySelector('#printChoi').classList.remove('hidden')
+  document.querySelector('#choiceBox').classList.remove('hidden')
 
   if (upYes) {
-    document.querySelector('.printUp').innerHTML = `Uppercase`
+    document.querySelector('#printUp').classList.remove('hidden')
+  } else {
+    document.querySelector('#printUp').classList.add('hidden')
+
   }
 
   if (lowYes) {
-    document.querySelector('.printLow').innerHTML = `Lowercase`
+    document.querySelector('#printLow').classList.remove('hidden')
+  } else {
+    document.querySelector('#printLow').classList.add('hidden')
+
   }
 
   if (numYes) {
-    document.querySelector('.printNum').innerHTML = `Numbers`
+    document.querySelector('#printNum').classList.remove('hidden')
+  } else {
+    document.querySelector('#printNum').classList.add('hidden')
   }
 
   if (spYes) {
-    document.querySelector('.printSp').innerHTML = `Special Characters`
+    document.querySelector('#printSp').classList.remove('hidden')
+  } else {
+    document.querySelector('#printSp').classList.add('hidden')
   }
 
   if (!upYes && !lowYes && !numYes && !spYes === true) {
