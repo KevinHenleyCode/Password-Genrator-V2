@@ -20,7 +20,7 @@
     </header>
 
 
-    <div class="flex flex-col items-center w-4/5 m-auto">
+    <div class="flex flex-col items-center w-4/6 m-auto">
         <div>
 
             <!-- form -->
@@ -33,28 +33,28 @@
                 <!-- radio buttons -->
                 <div class="grid grid-rows-5 md:grid-rows-2 grid-flow-col md:gap-x-12 md:gap-y-10 gap-y-4 mb-10 ">
                     <div class="flex flex-col items-center w-52 shadow-lg border-2 border-black border-solid rounded-lg bg-red-400 p-1">
-                        <h3 class="font-bold text-">Uppercase</h3>
+                        <h3 class="font-bold">Uppercase</h3>
                         <div>
                             Yes <input type="radio" name="value1" class="yes1" value="yes" required>
                             No <input type="radio" name="value1" class="no1" value="no">
                         </div>
                     </div>
                     <div class="flex flex-col items-center w-52 shadow-lg border-2 border-black border-solid rounded-lg bg-red-400 p-1">
-                        <h3 class="font-bold text-">Lowercase</h3>
+                        <h3 class="font-bold">Lowercase</h3>
                         <div>
                             Yes <input type="radio" name="value2" class="yes2" value="yes" required>
                             No <input type="radio" name="value2" class="no2" value="no">
                         </div>
                     </div>
                     <div class="flex flex-col items-center w-52 shadow-lg border-2 border-black border-solid rounded-lg bg-red-400 p-1">
-                        <h3 class="font-bold text-">Numbers</h3>
+                        <h3 class="font-bold">Numbers</h3>
                         <div>
                             Yes <input type="radio" name="value3" class="yes3" value="yes" required>
                             No <input type="radio" name="value3" class="no3" value="no">
                         </div>
                     </div>
                     <div class="flex flex-col items-center w-52 shadow-lg border-2 border-black border-solid rounded-lg bg-red-400 p-1">
-                        <h3 class="font-bold text-">Special Characters</h3>
+                        <h3 class="font-bold">Special Characters</h3>
                         <div>
                             Yes <input type="radio" name="value4" class="yes4" value="yes" required>
                             No <input type="radio" name="value4" class="no4" value="no">
@@ -70,14 +70,14 @@
 
 
             <!-- user choices -->
-            <div class="text-white">
+            <div id="choiceBox" class=" hidden text-white bg-gray-600 border-2 border-black border-solid rounded-sm mb-5 p-2">
                 <ul>
-                    <li class="printLen mb-5 text-red-400"></li>
-                    <li class="printChoi mb-5 text-2xl"></li>
-                    <li class="printUp mb-5 text-green-500 text-xl ml-5"></li>
-                    <li class="printLow mb-5 text-green-500 text-xl ml-5"></li>
-                    <li class="printNum mb-5 text-green-500 text-xl ml-5"></li>
-                    <li class="printSp mb-5 text-green-500 text-xl ml-5"></li>
+                    <li id="printLen" class=" mb-5 text-red-400"></li>
+                    <li id="printChoi" class="hidden mb-5 text-2xl">Your choice in characters were:</li>
+                    <li id="printUp" class="hidden mb-5 text-green-500 text-xl ml-5">Uppercase 2</li>
+                    <li id="printLow" class="hidden mb-5 text-green-500 text-xl ml-5">Lowercase</li>
+                    <li id="printNum" class="hidden mb-5 text-green-500 text-xl ml-5">Numbers</li>
+                    <li id="printSp" class="hidden mb-5 text-green-500 text-xl ml-5">Special Characters</li>
                 </ul>
             </div>
 
@@ -86,7 +86,7 @@
                 <!-- textarea -->
                 <textarea 
                 id='printPass' 
-                class="border-2 border-black border-solid rounded-sm bg-gray-500 placeholder-gray-400 text-green-500 p-2" 
+                class="border-2 border-black border-solid rounded-sm bg-gray-500 placeholder-gray-400 text-green-500 mb-10 w-11/12 p-2" 
                 readonly id="password" placeholder="Your Password" rows="4" cols="40"
                 aria-label="Generated Password">
             </textarea>
