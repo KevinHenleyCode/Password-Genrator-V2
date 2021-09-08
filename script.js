@@ -17,8 +17,8 @@ document.getElementById("submit").addEventListener("click", function(event){
     alert('Length must be no less than 1 character.')
     return location.reload()
 
-  } else if(parseInt(psLength) > 128) {
-    alert('Length must be no more than 128 characters.')
+  } else if(parseInt(psLength) > 30) {
+    alert('Length must be no more than 30 characters.')
     return location.reload()
 
   } else if(psLength.length == 0) {
@@ -26,7 +26,8 @@ document.getElementById("submit").addEventListener("click", function(event){
     return location.reload()
 
   } else {
-    document.querySelector('#printLen').innerHTML = `You chose to make your password ${psLength} characters long.`
+    document.querySelector('#printLen').innerHTML = `Password Length:`
+    document.querySelector('#printLen2').innerHTML = `${psLength}`
   }
 
 
