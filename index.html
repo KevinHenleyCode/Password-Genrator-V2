@@ -15,23 +15,23 @@
 <body class="bg-gray-700 font-mono">
 
     
-    <header class="flex flex-col items-center p-5 mb-20 bg-red-900">
+    <header class="flex flex-col items-center p-5 md:mb-5 bg-red-900">
         <h1 class="text-gray-200 text-4xl font-semibold">Password Generator V2</h1>
     </header>
 
 
-    <div class="flex flex-col items-center w-4/6 m-auto">
+    <div class="flex flex-col items-center w-4/6 p-24 m-auto">
         <div>
 
             <!-- form -->
             <form action="" class="flex flex-col items-center">
                 
                 <!-- number input -->
-                <label class="text-white">Length: (from 1-128)</label>
-                <input type="number" name="pslength" class="mb-10" id="pslength" min="1" max="128" required>
+                <label class="text-white">Length: (from 1-30)</label>
+                <input type="number" name="pslength" class="mb-10" id="pslength" min="1" max="30" required>
 
                 <!-- radio buttons -->
-                <div class="grid grid-rows-5 md:grid-rows-2 grid-flow-col md:gap-x-12 md:gap-y-10 gap-y-4 mb-10 ">
+                <div class="grid grid-rows-5 md:grid-rows-2 grid-flow-col md:gap-x-12 md:gap-y-10 gap-y-4 md:mb-10 ">
                     <div class="flex flex-col items-center w-52 shadow-lg border-2 border-black border-solid rounded-lg bg-red-400 p-1">
                         <h3 class="font-bold">Uppercase</h3>
                         <div>
@@ -64,12 +64,15 @@
 
                 
                 <!-- generate button and textarea -->
-                <div class="flex flex-row justify-center h-10 mb-5">
+                <div class="flex flex-row justify-center w-11/12 md:h-10 h-20 mb-5">
                     <input type="submit" name="submit" value="Generate" id="submit" class="text-gray-800 border-2 border-black border-solid bg-green-400 p-1 h-full mb-5">
-                    <textarea id='printPass'
+                    <h3 id='printPass'
+                        class="border-2 border-black border-solid bg-gray-500 placeholder-gray-400 text-green-500 mb-10 w-11/12 h-full p-2">
+                    </h3>
+                    <!-- <textarea id='printPass'
                         class="border-2 border-black border-solid bg-gray-500 placeholder-gray-400 text-green-500 mb-10 w-11/12 h-full p-2"
                         readonly id="password" placeholder="Your Password" rows="" cols="30" aria-label="Generated Password">
-                    </textarea>
+                    </textarea> -->
                 </div>
             </form>
         </div>
@@ -77,15 +80,14 @@
         <div>
 
             <!-- user choices -->
-            <div id="choiceBox" class=" hidden text-white bg-gray-600 border-2 border-black border-solid rounded-sm mb-5 p-2">
-                <ul>
-                    <li id="printLen" class=" mb-5 text-red-400"></li>
-                    <li id="printChoi" class="hidden mb-5 text-2xl">Your choice in characters were:</li>
-                    <li id="printUp" class="hidden mb-5 text-green-500 text-xl ml-5">Uppercase</li>
-                    <li id="printLow" class="hidden mb-5 text-green-500 text-xl ml-5">Lowercase</li>
-                    <li id="printNum" class="hidden mb-5 text-green-500 text-xl ml-5">Numbers</li>
-                    <li id="printSp" class="hidden mb-5 text-green-500 text-xl ml-5">Special Characters</li>
-                </ul>
+            <div id="choiceBox" class="flex flex-col items-center hidden text-white bg-gray-700 border-2 border-black border-solid rounded-sm mb-5 p-2">
+                <h4 id="printLen" class=" mb-5 text-red-400"></h4>
+                <h4 id="printLen2" class="bg-yellow-300 border-2 border-black border-solid rounded-md mb-6 text-black w-11/12 text-center text-xl ml-2"></h4>
+                <h4 id="printChoi" class="hidden mb-5 text-red-400 text-lg">Character Mods:</h4>
+                <h4 id="printUp" class="hidden bg-yellow-300 border-2 border-black border-solid rounded-md mb-2 text-black w-11/12 text-center text-xl ml-2">Uppercase</h4>
+                <h4 id="printLow" class="hidden bg-yellow-300 border-2 border-black border-solid rounded-md mb-2 text-black w-11/12 text-center text-xl ml-2">Lowercase</h4>
+                <h4 id="printNum" class="hidden bg-yellow-300 border-2 border-black border-solid rounded-md mb-2 text-black w-11/12 text-center text-xl ml-2">Numbers</h4>
+                <h4 id="printSp" class="hidden bg-yellow-300 border-2 border-black border-solid rounded-md mb-2 text-black w-11/12 text-center text-xl ml-2">Special</h4>
             </div>
         </div>
 
