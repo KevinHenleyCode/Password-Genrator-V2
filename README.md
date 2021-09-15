@@ -28,7 +28,7 @@
 <br>
 
 ## **Usage**
-* Lets the user see all options to choose from and generates a password based on those decisions.
+* Takes in a users choices and then picks a random character from each choice. Then takes all characters, concatenates and randomizes them into one string.
 <br>
 <br>
 
