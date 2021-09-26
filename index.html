@@ -20,14 +20,14 @@
     </header>
 
 
-    <div class="flex flex-col items-center w-4/6 p-24 m-auto">
+    <div class="flex flex-col items-center w-5/6 p-24 m-auto">
         <div>
 
             <!-- form -->
             <form action="" class="flex flex-col items-center">
                 
                 <!-- number input -->
-                <label class="text-white">Length: (from 1-30)</label>
+                <label class="text-white mb-2">Length: (from 1-30)</label>
                 <input type="number" name="pslength" class="mb-10" id="pslength" min="1" max="30" required>
 
                 <!-- radio buttons -->
@@ -77,17 +77,19 @@
             </form>
         </div>
 
-        <div>
+        <div class="">
 
             <!-- user choices -->
-            <div id="choiceBox" class="flex flex-col items-center hidden text-white bg-gray-700 border-2 border-black border-solid rounded-sm mb-5 p-2">
-                <h4 id="printLen" class=" mb-5 text-red-400"></h4>
+            <div id="choiceBox" class="flex flex-col items-center hidden text-white bg-gray-700 border-2 border-black border-solid rounded-sm w-max mb-5 p-20">
+                <h4 id="printLen" class=" mb-5 text-red-400 text-center w-11/12"></h4>
                 <h4 id="printLen2" class="bg-yellow-300 border-2 border-black border-solid rounded-md mb-6 text-black w-11/12 text-center text-xl ml-2"></h4>
-                <h4 id="printChoi" class="hidden mb-5 text-red-400 text-lg">Character Mods:</h4>
-                <h4 id="printUp" class="hidden bg-yellow-300 border-2 border-black border-solid rounded-md mb-2 text-black w-11/12 text-center text-xl ml-2">Uppercase</h4>
-                <h4 id="printLow" class="hidden bg-yellow-300 border-2 border-black border-solid rounded-md mb-2 text-black w-11/12 text-center text-xl ml-2">Lowercase</h4>
-                <h4 id="printNum" class="hidden bg-yellow-300 border-2 border-black border-solid rounded-md mb-2 text-black w-11/12 text-center text-xl ml-2">Numbers</h4>
-                <h4 id="printSp" class="hidden bg-yellow-300 border-2 border-black border-solid rounded-md mb-2 text-black w-11/12 text-center text-xl ml-2">Special</h4>
+                <h4 id="printChoi" class="hidden mb-5 text-red-400 text-center text-lg w-11/12">Character Mods:</h4>
+                <div class="grid grid-cols-1 sm:grid-cols-2 w-max">
+                    <h4 id="printUp" class="hidden bg-yellow-300 border-2 border-black border-solid rounded-md mb-2 text-black w-11/12 text-center text-xl ml-2 mr-2 sm:pr-2 sm:pl-2">Uppercase</h4>
+                    <h4 id="printLow" class="hidden bg-yellow-300 border-2 border-black border-solid rounded-md mb-2 text-black w-11/12 text-center text-xl ml-2 mr-2 sm:pr-2 sm:pl-2">Lowercase</h4>
+                    <h4 id="printNum" class="hidden bg-yellow-300 border-2 border-black border-solid rounded-md mb-2 text-black w-11/12 text-center text-xl ml-2 mr-2 sm:pr-2 sm:pl-2">Numbers</h4>
+                    <h4 id="printSp" class="hidden bg-yellow-300 border-2 border-black border-solid rounded-md mb-2 text-black w-11/12 text-center text-xl ml-2 mr-2 sm:pr-2 sm:pl-2">Special</h4>
+                </div>
             </div>
         </div>
 
