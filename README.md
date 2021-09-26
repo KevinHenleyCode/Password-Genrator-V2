@@ -32,6 +32,11 @@
 <br>
 <br>
 
+## **Updates**
+* Added a grid to the choice results to make it fill more of the space horizontally.
+<br>
+<br>
+
 ## **License**
 ### *MIT* <br>
         A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
