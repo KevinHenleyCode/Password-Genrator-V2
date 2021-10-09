@@ -23,7 +23,7 @@
 <br>
 
 ## **Installation**
-* There is no installation.
+* There is no installation, simply click the link and you'll be taken to the generator.
 <br>
 <br>
 
