@@ -40,6 +40,7 @@
 ## **Future**
 * Have the ability to create an account.
 * Be able to store your passwords to reference later.
+* be able to toggle between light and dark mode.
 <br>
 <br>
 
