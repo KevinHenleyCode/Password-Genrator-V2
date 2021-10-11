@@ -7,6 +7,7 @@
 
 ## **Description**
 * A more refined and better looking password generator.
+* Meant to make it easy to quickly generate a random password.
 <br>
 <br>
 
